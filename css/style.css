@@ -1,0 +1,109 @@
+body {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --main-color: #0075ff;
+    --border-radius: 5px;
+}
+
+.head {
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.head img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.head h1 {
+    font-size: 25px;
+    margin: 15px 0 0;
+    color: #777;
+}
+
+.addtask {
+    width: 500px;
+    max-width: 100%;
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    margin-right: 20px;
+    flex: 1;
+    border: 0;
+    padding-left: 10px;
+    border-radius: var(--border-radius);
+}
+
+.tasks {
+    width: 500px;
+    max-width: 100%;
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.currenttask {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input:focus,
+.taskinput .taskp:focus {
+    outline: 0;
+    caret-color: var(--main-color);
+}
+
+.taskinput {
+    flex: 1;
+    width: 300px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.taskinput .taskp {
+    width: 100%;
+    margin: 0;
+}
+
+.add,
+.delete,
+.edit,
+.update {
+    border: 0;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    height: 100%;
+}
+
+.delete,
+.edit,
+.update {
+    margin-left: 20px;
+}
+
+.update {
+    display: none;
+}
+
